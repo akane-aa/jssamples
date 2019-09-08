@@ -1,8 +1,11 @@
-let num = Math.round(Math.random() * 100);
-console.log("現在の値: " + num);
-if (num <= 40) {
-  console.log("数値は40以下です");
+let score = Math.round(Math.random() * 100);
+console.log("得点:" + score);
+if (score >= 80) {
+  console.log("成績は優です");
+} else if (score >= 70) {
+  console.log("成績は良です");
+} else if (score >= 60) {
+  console.log("成績は可です");
 } else {
-  console.log("数値は40より大きいです");
+  console.log("成績は不可です");
 }
-console.log("処理完了！");
